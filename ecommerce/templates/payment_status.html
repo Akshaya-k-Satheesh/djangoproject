@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container text-center mt-5" style="margin-bottom:100px">
+
+    {% if status == True %}
+     <h2>Payment Successful</h2>
+    {% else %}
+     <h2>Payment Failed.Please try again ...</h2>
+    {% endif %}
+</div>
+{% endblock %}
